@@ -1,9 +1,11 @@
 # Passo 1
- Identificar/Listar todos os Numeros Inteiros de tal forma que a soma dos mesmos tenham um alvo (Lista)
+ Identificar/Listar todos os Numeros Inteiros de tal forma que a soma dos mesmos tenham um alvo (Lista);
+ 
+ Lista - [ ] [ ] [ ]
+# Passo 2
+Quando localizado os numerais, sera colocado em evidencia o resultado, que com a soma de dois numeros cheguem ao valor final (Alvo);
 
-
-
-Example:
+Alvo - [ ]
 
 # FirstProgram
 Teste de Programa
