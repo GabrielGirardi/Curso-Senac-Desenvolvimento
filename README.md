@@ -1,12 +1,15 @@
 # Passo 1
- Identificar/Listar todos os Numeros Inteiros de tal forma que a soma dos mesmos tenham um alvo (Lista);
+ Identificar/Listar todos os Números Inteiros de tal forma que a soma dos mesmos tenham um alvo (Lista);
  
  Lista - [ ] [ ] [ ]
 # Passo 2
-Quando localizado os numerais, sera colocado em evidencia o resultado, que com a soma de dois numeros cheguem ao valor final (Alvo);
+Quando localizado os numerais, será colocado em evidência o resultado, que com a soma de dois números cheguem ao valor final (Alvo);
 
 Alvo - [ ]
+# Passo 3
+Por fim, ao ter em mãos o Alvo, será considerado os números utilizados (Lista) para formar o resultado, isto é, deve-se somar e formular um valor fixo (Resposta);
 
+Respota - [ ] + [ ] = [ ]
 # FirstProgram
 Teste de Programa
 [Class Repository](https://github.com/azlinwei/Dev) 
