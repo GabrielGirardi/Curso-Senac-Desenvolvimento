@@ -1,3 +1,10 @@
+# Passo 1
+ Identificar/Listar todos os Numeros Inteiros de tal forma que a soma dos mesmos tenham um alvo (Lista)
+
+
+
+Example:
+
 # FirstProgram
 Teste de Programa
 [Class Repository](https://github.com/azlinwei/Dev) 
