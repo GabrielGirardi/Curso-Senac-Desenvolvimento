@@ -12,6 +12,11 @@ Alvo - [ ]
 Por fim, ao ter em mãos o Alvo, será considerado os números utilizados (Lista) para formar o resultado, isto é, deve-se somar e formular um valor fixo (Resposta);
 
 Respota - [ ] + [ ] = [ ]
+
+| Informações do pedido |
+| ----------------------|
+| Desenvolver um software voltado a área de exatas |
+| Utilizar apenas números inteiros|
 # FirstProgram
 Teste de Programa
 [Class Repository](https://github.com/azlinwei/Dev) 
