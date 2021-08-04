@@ -38,9 +38,10 @@ public class TemplateBranco {
                 System.out.printf("Soma das variáveis a e d = %d \n", (Val.a + Val.d));
                 System.out.printf("Soma das variáveis a e e = %d \n", (Val.a + Val.e));
                     if(ListNum[0] + ListNum[6] == resp){
-                        System.out.printf("Primeira soma, seu resultado é 1 "  ,ListNum[6]);
-                        System.out.printf("Segunda soma, seu resultado é 2 "  ,ListNum[0]);
-                        System.out.printf("Terceira soma, seu resultado é 3 ",resp);      }
+                        System.out.printf("Primeira soma, seu resultado é 7 -"  ,ListNum[6]);
+                        System.out.printf(" Segunda soma, seu resultado é 8 -"  ,ListNum[0]);
+                        System.out.printf(" Terceira soma, seu resultado é 9 -",resp); 
+                        System.out.printf(" Quarta soma, seu resultado é 10 -",resp);}
                     else{
                         System.out.print ("resposta incorreta");
                     }
