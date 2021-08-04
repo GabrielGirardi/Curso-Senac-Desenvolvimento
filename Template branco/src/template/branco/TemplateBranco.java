@@ -33,13 +33,14 @@ public class TemplateBranco {
                 System.out.print(str1);
                 System.out.println(str2);
                 System.out.print(str2 + str1);
-                System.out.printf("Soma da variveis a e b = %d \n", (Val.a + Val.b));
-                System.out.printf("Soma da variveis a e c = %d \n", (Val.a + Val.c));
-                System.out.printf("Soma da variveis a e d = %d \n", (Val.a + Val.d));
-                System.out.printf("Soma da variveis a e e = %d \n", (Val.a + Val.e));
+                System.out.printf("Soma das variáveis a e b = %d \n", (Val.a + Val.b));
+                System.out.printf("Soma das variáveis a e c = %d \n", (Val.a + Val.c));
+                System.out.printf("Soma das variáveis a e d = %d \n", (Val.a + Val.d));
+                System.out.printf("Soma das variáveis a e e = %d \n", (Val.a + Val.e));
                     if(ListNum[0] + ListNum[6] == resp){
-                        System.out.print("resposta correta " + (ListNum[6] - ListNum[0]));
-                    }
+                        System.out.printf("Primeira soma, seu resultado é 1 "  ,ListNum[6]);
+                        System.out.printf("Segunda soma, seu resultado é 2 "  ,ListNum[0]);
+                        System.out.printf("Terceira soma, seu resultado é 3 ",resp);      }
                     else{
                         System.out.print ("resposta incorreta");
                     }
