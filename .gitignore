@@ -30,3 +30,6 @@
 *.exe
 *.out
 *.app
+/Template Variavel/build/
+/Template Variavel/dist/
+/Template Variavel/nbproject/private/
