@@ -4,7 +4,6 @@
  * and open the template in the editor.
  */
 package javaapplication.pkg2;
-
 import java.util.Scanner;
 
 /**
@@ -12,13 +11,16 @@ import java.util.Scanner;
  * @author gabriel.girardi
  */
 public class JavaApplication2 {
-
+   
+    /**
+     * @param args the command line arguments
+     */
     public static void main(String[] args) {
         float a = 0;
         float c = 0;
         float d = 0;
         Scanner input = new Scanner(System.in);
-        System.out.println("informe o primeiro valor: ");
+        System.out.println("Informe o primeiro valor: ");
         a = input.nextInt();                               
                        
         System.out.println("Informe a operacao (1 +, 2 -, 3 *, 4 /  ");
