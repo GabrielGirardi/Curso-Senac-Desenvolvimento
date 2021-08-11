@@ -24,7 +24,7 @@ public class JavaApplication2 {
         a = input.nextInt();                               
                        
         System.out.println("Informe a operacao (1 +, 2 -, 3 *, 4 /  ");
-        int b = input.nextInt();
+        int b = input.nextInt();            
               
         
                    switch (b)
