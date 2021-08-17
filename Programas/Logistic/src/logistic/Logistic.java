@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package cmd.java.logistic;
+package logistic;
 
 import java.util.Scanner;
 
@@ -11,13 +11,12 @@ import java.util.Scanner;
  *
  * @author gabriel.girardi
  */
-public class CMDJavaLogistic {
+public class Logistic {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        
     Scanner input = new Scanner(System.in);
     int[] ListNum = new int[20];
     int a = 0;
@@ -44,6 +43,8 @@ public class CMDJavaLogistic {
   }
 }
     
-    
+  
 
+    
+    
 
