@@ -5,6 +5,8 @@
  */
 package listarr;
 
+import java.util.Arrays;
+
 
 
 
@@ -21,11 +23,9 @@ public class ListArr {
      */
     public static void main(String[] args) {
        Dados a = new Dados();
-       a.cadArraylist();
-       a.lerArraylist();
-    }
-    
-     
-
-    
+       System.out.println(Arrays.toString(a.getName()));
+       System.out.println(Arrays.toString(a.getIdade()));
+       String[] b = a.getName();
+       System.out.println(b[0]);
+    }  
 }
