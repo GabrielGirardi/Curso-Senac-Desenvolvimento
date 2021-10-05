@@ -56,17 +56,14 @@ public class Cadastro extends javax.swing.JFrame {
         gen = new javax.swing.JComboBox<>();
         dep = new javax.swing.JComboBox<>();
         jButton2 = new javax.swing.JButton();
-        data = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Cadastro");
         setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         setForeground(java.awt.Color.white);
 
-        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
         jLabel1.setText("Nome completo:");
 
-        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setText("Data de Nacimento:");
 
         jLabel3.setText("ID:");
@@ -114,12 +111,6 @@ public class Cadastro extends javax.swing.JFrame {
             }
         });
 
-        data.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                dataActionPerformed(evt);
-            }
-        });
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -159,17 +150,11 @@ public class Cadastro extends javax.swing.JFrame {
                                 .addGap(0, 98, Short.MAX_VALUE))
                             .addComponent(dep, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addContainerGap())))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(14, 14, 14)
-                .addComponent(data, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(data, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(22, 22, 22)
+                .addGap(54, 54, 54)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
                     .addComponent(nome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -211,9 +196,9 @@ public class Cadastro extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         try {
-            String url = "jdbc:mysql://localhost:3306/trab1";
+            String url = "jdbc:mysql://localhost:3306/A1";
             String user = "root";
-            String pass = "";
+            String pass = "1001";
 
             Connection conn = DriverManager.getConnection(url, user, pass);
             Statement stmt = conn.createStatement();
@@ -248,10 +233,6 @@ public class Cadastro extends javax.swing.JFrame {
             cont.setText("");
     }//GEN-LAST:event_jButton2ActionPerformed
 
-    private void dataActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_dataActionPerformed
-     
-    }//GEN-LAST:event_dataActionPerformed
-
     /**
      * @param args the command line arguments
      */
@@ -278,6 +259,7 @@ public class Cadastro extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(Cadastro.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
+        //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
@@ -290,7 +272,6 @@ public class Cadastro extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JComboBox<String> anoA;
     private javax.swing.JTextField cont;
-    private javax.swing.JTextField data;
     private javax.swing.JComboBox<String> dataA;
     private javax.swing.JComboBox<String> dep;
     private javax.swing.JTextField ender;

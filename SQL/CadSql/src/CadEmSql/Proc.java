@@ -3,14 +3,15 @@ package CadEmSql;
 import java.sql.*;
 import javax.swing.*;
 import java.util.ArrayList;
+import java.awt.Color;
 
 public class Proc extends javax.swing.JFrame {
-
+ 
     final void filtro(){
         try {
-            String url = "jdbc:mysql://localhost:3306/trab1";
+            String url = "jdbc:mysql://localhost:3306/A1";
             String user = "root";
-            String pass = "";
+            String pass = "1001";
 
             Connection conn = DriverManager.getConnection(url, user, pass);
             Statement stmt = conn.createStatement();
@@ -26,6 +27,7 @@ public class Proc extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, e.toString());
         }
     }
+    
     
     public Proc() {
         initComponents();
@@ -73,7 +75,14 @@ public class Proc extends javax.swing.JFrame {
 
         jLabel7.setText("Departamento:");
 
+        gen.setForeground(new java.awt.Color(0, 0, 255));
         gen.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Masc.", "Femi." }));
+
+        nome.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                nomeActionPerformed(evt);
+            }
+        });
 
         dep.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "TI", "Financeiro", "ADM.", "Eng.", "Gerencia", "Transporte", "Contrato" }));
 
@@ -91,6 +100,7 @@ public class Proc extends javax.swing.JFrame {
 
         jLabel5.setText("Endereço:");
 
+        List1.setBackground(new java.awt.Color(255, 255, 51));
         List1.addListSelectionListener(new javax.swing.event.ListSelectionListener() {
             public void valueChanged(javax.swing.event.ListSelectionEvent evt) {
                 List1ValueChanged(evt);
@@ -98,6 +108,7 @@ public class Proc extends javax.swing.JFrame {
         });
         jScrollPane1.setViewportView(List1);
 
+        Atualizar.setBackground(new java.awt.Color(0, 255, 51));
         Atualizar.setText("Atualizar");
         Atualizar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -105,6 +116,7 @@ public class Proc extends javax.swing.JFrame {
             }
         });
 
+        Del.setBackground(new java.awt.Color(255, 0, 0));
         Del.setText("Delete");
         Del.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -201,9 +213,9 @@ public class Proc extends javax.swing.JFrame {
 
     private void List1ValueChanged(javax.swing.event.ListSelectionEvent evt) {//GEN-FIRST:event_List1ValueChanged
         try {
-            String url = "jdbc:mysql://localhost:3306/trab1";
+            String url = "jdbc:mysql://localhost:3306/A1";
             String user = "root";
-            String pass = "";
+            String pass = "1001";
 
             Connection conn = DriverManager.getConnection(url, user, pass);
             Statement stmt = conn.createStatement();
@@ -232,15 +244,15 @@ public class Proc extends javax.swing.JFrame {
     private void AtualizarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AtualizarActionPerformed
 
         try {
-            String url = "jdbc:mysql://localhost:3306/trab1";
+            String url = "jdbc:mysql://localhost:3306/A1";
             String user = "root";
-            String pass = "";
+            String pass = "1001";
 
             Connection conn = DriverManager.getConnection(url, user, pass);
             Statement stmt = conn.createStatement();
-            String Query = "UPDATE dados SET Nome = '"+nome.getText()+"', ID = '"+numID.getText()+"', DataAniversario = '"+dataA.getSelectedItem()+"', MesAniversario= '"+mesA.getSelectedItem()+"',AnoAniversario= '"+anoA.getSelectedItem()+"',NumTele= '"+cont.getText()+"',Endereco= '"+ender.getText()+"',genero= '"+gen.getSelectedItem()+"',Departamento= '"+dep.getSelectedItem()+"'WHERE ID = '"+List1.getSelectedValue()+"'";
+            String Query = "UPDATE dados SET Nome = '"+nome.getText()+"', ID = '"+numID.getText()+"', Data = '"+dataA.getSelectedItem()+"', Mes= '"+mesA.getSelectedItem()+"',Ano= '"+anoA.getSelectedItem()+"',Telefone= '"+cont.getText()+"',Endereco= '"+ender.getText()+"',Genero= '"+gen.getSelectedItem()+"',Departamento= '"+dep.getSelectedItem()+"'WHERE ID = '"+List1.getSelectedValue()+"'";
             stmt.execute(Query);
-            JOptionPane.showMessageDialog(null, "Atualizado!!!");
+            JOptionPane.showMessageDialog(null, "Atualizado com sucesso!");
     
         } catch (SQLException e) {
             JOptionPane.showMessageDialog(null, e.toString());
@@ -250,15 +262,15 @@ public class Proc extends javax.swing.JFrame {
 
     private void DelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DelActionPerformed
         try {
-            String url = "jdbc:mysql://localhost:3306/trab1";
+            String url = "jdbc:mysql://localhost:3306/A1";
             String user = "root";
-            String pass = "";
+            String pass = "1001";
 
             Connection conn = DriverManager.getConnection(url, user, pass);
             Statement stmt = conn.createStatement();
             String Query = "DELETE FROM dados WHERE ID = '"+List1.getSelectedValue()+"'";
             stmt.execute(Query);
-            JOptionPane.showMessageDialog(null, "Deletado!!!");
+            JOptionPane.showMessageDialog(null, "Deletado com sucesso!");
             
               
         } catch (SQLException e) {
@@ -266,6 +278,10 @@ public class Proc extends javax.swing.JFrame {
         } 
         filtro();
     }//GEN-LAST:event_DelActionPerformed
+
+    private void nomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_nomeActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_nomeActionPerformed
 
     /**
      * @param args the command line arguments
