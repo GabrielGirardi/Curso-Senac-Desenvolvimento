@@ -19,6 +19,10 @@ public class Dados implements Serializable{
         this.nome = nome;
         this.senha = senha;
     }
+
+    Dados() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     public boolean equals(Dados dados)
     {
         return(this.nome.equals(dados.nome) && this.senha == dados.senha);
