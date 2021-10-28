@@ -43,21 +43,21 @@ public class Main extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        Pag1.setText("Pag1");
+        Pag1.setText("Cliente");
         Pag1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Pag1ActionPerformed(evt);
             }
         });
 
-        Pag2.setText("Pag2");
+        Pag2.setText("Vendedor");
         Pag2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Pag2ActionPerformed(evt);
             }
         });
 
-        Pag3.setText("Pag3");
+        Pag3.setText("Produto");
         Pag3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Pag3ActionPerformed(evt);
@@ -80,12 +80,17 @@ public class Main extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(24, 24, 24)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(Pag1)
-                    .addComponent(Pag3)
-                    .addComponent(Pag2))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 46, Short.MAX_VALUE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(24, 24, 24)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(Pag1)
+                            .addComponent(Pag3))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 28, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(Pag2)
+                        .addGap(18, 18, 18)))
                 .addComponent(Painel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
@@ -110,7 +115,7 @@ public class Main extends javax.swing.JFrame {
 
     private void Pag1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Pag1ActionPerformed
         Pag1 P1 = new Pag1();
-        P1.setSize(420,420);
+        P1.setSize(420,300);
         P1.setLocation(0,0);
         Painel.removeAll();
         Painel.add(P1, BorderLayout.CENTER);
@@ -120,7 +125,7 @@ public class Main extends javax.swing.JFrame {
 
     private void Pag2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Pag2ActionPerformed
          Pag2 P2 = new Pag2();
-        P2.setSize(420,400);
+        P2.setSize(420,300);
         P2.setLocation(0,0);
         Painel.removeAll();
         Painel.add(P2, BorderLayout.CENTER);
@@ -130,7 +135,7 @@ public class Main extends javax.swing.JFrame {
 
     private void Pag3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Pag3ActionPerformed
          Pag3 P3 = new Pag3();
-        P3.setSize(420,400);
+        P3.setSize(420,300);
         P3.setLocation(0,0);
         Painel.removeAll();
         Painel.add(P3, BorderLayout.CENTER);
